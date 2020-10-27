@@ -1,18 +1,18 @@
 {
     "name": "horde/tree",
     "description": "Tree rendering library",
-    "type": "library",
+    "type": "horde-library",
     "homepage": "https://www.horde.org/libraries/Horde_Tree",
     "license": "LGPL-2.1",
     "authors": [
         {
-            "name": "Chuck Hagenbuch",
-            "email": "chuck@horde.org",
+            "name": "Jan Schneider",
+            "email": "jan@horde.org",
             "role": "lead"
         },
         {
-            "name": "Jan Schneider",
-            "email": "jan@horde.org",
+            "name": "Chuck Hagenbuch",
+            "email": "chuck@horde.org",
             "role": "lead"
         },
         {
@@ -22,25 +22,22 @@
         }
     ],
     "version": "2.0.6",
-    "time": "2017-11-11",
+    "time": "2020-10-27",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Exception": "^2",
-        "pear-pear.horde.org/Horde_Url": "^2",
-        "pear-pear.horde.org/Horde_Util": "^2"
+        "horde/exception": "dev-master",
+        "horde/url": "dev-master",
+        "horde/util": "dev-master"
     },
     "suggest": {
         "ext-gettext": "*"
-    },
-    "replace": {
-        "pear-pear.horde.org/Horde_Tree": "2.*",
-        "pear-horde/Horde_Tree": "2.*"
     },
     "autoload": {
         "psr-0": {
